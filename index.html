@@ -1,0 +1,38 @@
+<html>
+<head>
+
+	<title> App by Mayur Agare </title>
+	<style>
+		*{font-size:50px;}
+		.nav {background-color:black;}
+		.nav a {color:white; text-decoration:none;pading:10%;}
+		body {background-color:lightblue;}
+	</style>
+	<script>
+		function find()
+		{
+			event.preventDefault();
+			let num = document.getElementById("num");
+			let ans = document.getElementById("ans");
+			let n = parseInt(num.value);
+			let r = n % 2 == 0 ? "even" : "odd";
+			ans.innerHTML = r
+		}
+	</script>
+</head>
+<body>
+<center>
+	<div class="nav">
+		<a href="index.html"> HOME </a>
+		<a href="about.html"> ABOUT </a>
+	</div>
+
+	<h1> Even Odd Finder </h1>	
+	<form onsubmit="find()">
+	<input type="number" placeholder="enter integer" id="num" />
+	<br><br>
+	<input type="submit" value="Find Even/Odd" id="ans" />
+	</div>
+</center>
+</body>
+</html>
